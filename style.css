@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    height: 80px;
+    background-color:black;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0px 100px;
+}
+nav .img-btn{
+    display:block;
+    height: 60px;
+    width: auto;
+    color: white;
+}
+#click{
+    display: none;
+}
+#click:checked ~ .SIGN-IN{
+     top: 300px;
+}  
+.SIGN-IN{
+    background-color: black;
+    margin-top: 100px;
+    width:400px;
+    height: 450px;
+    position: fixed;
+    top: -1000px;
+    transition: all 2s;
+    color: white;
+}
+.SIGN-IN input{
+    background-color: rgb(220, 205, 205);
+    padding-bottom: 20px;
+    width:200px;
+    margin-bottom: 20px;
+}
+.SIGN-IN h2{
+    text-align: center;
+    margin: 20px 0 30px 0;
+}
+.SIGN-IN h2:hover{
+    color: yellow;
+    text-shadow: 1px 2px 2px white;
+}
+input{
+    padding: 5px;
+    width: 90px;
+    margin-left: 100px;
+    text-align: left;
+    transition: all;
+    transition-duration: 1s;
+}
+input:hover{
+    width: 200px;
+    background-color: lightpink;
+    color: black;
+    font-weight: bolder;
+    border: 2px solid red;
+    transform: scale(1,.8);
+    box-shadow: 3px 4px 8px peachpuff;
+}
+
+.SIGN-IN #fpass{
+    padding-left:100px;
+    color: white;
+    padding-top: -10px;
+}
+.SIGN-IN #fpass:hover{
+    color: yellow;
+}
+.SIGN-IN button{
+    display: block;
+    background-color: teal;
+    padding: 4px 6px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.SIGN-IN button:hover{
+    background-color: rgb(49, 5, 5);
+    color: rgb(238, 232, 232);
+    font-weight: bolder;
+    border-radius: 10%;
+    box-shadow: 1px 2px 1px white;
+}
+nav .logo{
+    color: white;
+    font-size: 33px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+nav ul li{
+    margin: 0 10px;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: all .6s;
+    padding: 8px 10px;
+    border-radius: 7%;
+}
+nav ul li a:hover,
+nav ul li a.active{
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width:500px){
+    ul li {
+        display: none;
+    }
+    .SIGN-IN{
+        width:300px;
+    }
+    input{
+        margin-left: 70px;
+        width: 60px;
+    }
+}
+
+@media (max-width:420px){
+    ul li { 
+        display: none;
+    }
+    .img-btn{
+        margin-left: 100px;
+    }
+    .SIGN-IN{
+        width: 250px;
+    }
+    input{
+        margin-left: 0px;
+        width: 60px;
+    }
+}
