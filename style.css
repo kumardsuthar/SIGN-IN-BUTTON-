@@ -24,7 +24,7 @@ nav .img-btn{
     display: none;
 }
 #click:checked ~ .SIGN-IN{
-     top: 300px;
+     top:100px;
 }  
 .SIGN-IN{
     background-color: black;
